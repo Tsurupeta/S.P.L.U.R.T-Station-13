@@ -121,9 +121,17 @@
 	name = "left burst engine"
 	icon_state = "burst_l"
 
+/obj/structure/shuttle/engine/propulsion/burst/left/Destroy()
+	stack_trace()
+	. = ..()
+
 /obj/structure/shuttle/engine/propulsion/burst/right
 	name = "right burst engine"
 	icon_state = "burst_r"
+
+/obj/structure/shuttle/engine/propulsion/burst/right/Destroy()
+	stack_trace()
+	. = ..()
 
 /obj/structure/shuttle/engine/router
 	name = "engine router"
